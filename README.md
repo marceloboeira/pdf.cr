@@ -1,4 +1,4 @@
-# pdf.cr
+# pdf.cr [![Build Status](https://travis-ci.org/marceloboeira/pdf.cr.svg?branch=master)](https://travis-ci.org/marceloboeira/pdf.cr)
 > PDF for Crystal
 
 ## Installation
