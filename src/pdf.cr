@@ -7,11 +7,16 @@ class PDF
   def to_s
     buffer = header
     buffer += LINE_BREAK
+    buffer += footer
 
     buffer
   end
 
   private def header
     "%PDF-#{PDF_VERSION}"
+  end
+
+  private def footer
+    "%%EOF"
   end
 end
