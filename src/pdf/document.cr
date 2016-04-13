@@ -3,12 +3,10 @@ module PDF
     PDF_VERSION = 1.3
     LINE_BREAK = "\n"
 
-    def to_s
-      buffer = header
-      buffer += LINE_BREAK
-      buffer += footer
-
-      buffer
+    def to_s(io)
+      io << header
+      io << LINE_BREAK
+      io << footer
     end
 
     private def header
